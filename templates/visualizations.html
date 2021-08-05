@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% set active_page = "visualizations" %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/visualizations.css" />
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 jumbotron text-center">
+      <h1>Crime Analysis Dashboard</h1>
+      <p>Use the interactive charts below to explore the dataset</p>
+    </div>
+  </div>
+  <div class="row" id="vizdiv">
+    <div class="col-md-2">
+      <div class="well">
+        <h5>Year</h5>
+        <select id="selectedYear" onchange="yearChanged(this.value)"></select>
+        <h5>State</h5>
+        <select id="selectedState"></select>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Reported Crime Averages</h3>
+        </div>
+        <div id="ReportInfo" class="panel-body"></div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div id="bar"></div>
+
+      <div id="gauge"></div>
+
+
+    </div>
+    <div class="col-md-5">
+
+      <h3 style="text-align: center;" id="scattertitle"><b>National Crime Average Standardized by Population</b></h3>
+      <div id="scatter"></div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

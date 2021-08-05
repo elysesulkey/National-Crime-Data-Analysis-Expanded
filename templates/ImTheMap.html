@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% set active_page = "map" %}
+
+{% block content %}
+
+<select id="yearselection" onchange="heatmapyearchange(this.value)">
+
+  <option id="selected_year" value="{{selected_year}}">{{selected_year}}</option>
+  <option id="unselected_year" value="{{unselected_year}}">{{unselected_year}}</option>
+</select>
+
+<!-- The div that holds our map -->
+<div id="mapid"></div>
+
+{% endblock %}
