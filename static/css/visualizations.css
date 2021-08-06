@@ -35,14 +35,20 @@ body {
 }
 
 #scatter {
-  margin-left:-200px;
+  margin-top: 50px;
+  margin-left:150px;
   margin-right:-80px;
+  
 }
 #scattertitle {
-  margin-left:-100px;
-  margin-right:-100px;
+  margin-top: 50px;
+  margin-left:100px;
+  margin-right:200px;
 }
+  
+
 #vizdiv {
-  margin-left:-300px; 
-  margin-right:-300px
+  margin-left:100px; 
+  margin-right:200px;
+
 }
