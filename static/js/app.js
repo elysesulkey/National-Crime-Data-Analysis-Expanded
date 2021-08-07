@@ -2,12 +2,12 @@
 function OptionMenu(selectedYear, selectedState) {
 
     // Check if value selected in dropdown
-    //console.log(selectedYear, selectedState);
+    console.log(selectedYear, selectedState);
   
     // Read the json file for the data
     d3.json("/static/data/state_year_avg.json").then((data) => {
   
-    //console.log(data);
+    console.log(data);
       
     // Select year & append to dropdown
     let YearOption = [...new Set(data.map(item => item.Year))];
