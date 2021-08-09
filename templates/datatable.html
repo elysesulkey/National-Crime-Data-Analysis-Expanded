@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% set active_page = "datatable" %}
+
+{% block content %}
+
+<php $Servername="localhost" ; $Username="postgres" ; $Password="postgres" ; $dbName="projectthree-raw" ;
+    $conn=mysqli_connect( $Servername , $Username , $Password , $dbName );>
+</php>
+
+<php include_once 'header.php' ; $conn=mysqli_connect( $Servername , $Username , $Password , $dbName ); $result=$conn->
+    query($sql);
+
+    <!--if ($result->num_rows > 0) {
+while($row = $result->fetch_assoc()) {
+    echo $row["State"]. " " . $row["City"]. "" $row["Year"]. "  "<br>"
+    ; $State=$row["State"]; $City=$row["City"]; $Year=$row["Year"] } } else { echo $sql; } $conn->close();
+-->
+</php>
+
+<div class="form-group">
+    <label class="col-md-12">State</label>
+    <div class="col-md-12">
+        <input type="text" required="" name="State" value="<?php echo $State;?>" class="form-control form-control-line">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-12">City</label>
+    <div class="col-md-12">
+        <input type="text" required="" name="City" value="<?php echo $City;?>" class="form-control form-control-line">
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-12">Year</label>
+    <div class="col-md-12">
+        <input type="int" required="" name="Year" value="<?php echo $Year;?>" class="form-control form-control-line">
+    </div>
+</div>
+<style type="text/css">
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg .tg-c3ow {
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top
+    }
+
+    .tg .tg-0pky {
+        border-color: inherit;
+        text-align: left;
+        vertical-align: top
+    }
+</style>
+<table class="tg">
+    <thead>
+        <tr>
+            <th class="tg-c3ow">State</th>
+            <th class="tg-0pky">City</th>
+            <th class="tg-0pky">Year</th>
+            <th class="tg-0pky">Population</th>
+            <th class="tg-0pky">Violent Crime</th>
+            <th class="tg-0pky">Murder</th>
+            <th class="tg-0pky">Rape</th>
+            <th class="tg-0pky">Robbery</th>
+            <th class="tg-0pky">Aggravated Assault</th>
+            <th class="tg-0pky">Property Crime</th>
+            <th class="tg-0pky">Burglary</th>
+            <th class="tg-0pky">Larceny Theft</th>
+            <th class="tg-0pky">Motor Vehicle Theft</th>
+            <th class="tg-0pky">Arson</th>
+        </tr>
+    <tbody>
+        <tr>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+            <td class="tg-0lax"></td>
+        </tr>
+    </tbody>
+    </thead>
+</table>
+{% endblock %}

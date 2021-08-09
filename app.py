@@ -36,6 +36,9 @@ def resources():
 def visualizations():
     return render_template("visualizations.html")
 
+@app.route('/datatable')
+def datatable():
+    return render_template("datatable.html")
 
 @app.route('/d3viz')
 def d3viz():
