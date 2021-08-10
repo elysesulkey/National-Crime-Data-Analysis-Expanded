@@ -41,6 +41,9 @@ def visualizations(year="2019"):
         unselected_year="2019"
     return render_template("visualizations.html",selected_year=year,unselected_year=unselected_year)
 
+@app.route('/datatable')
+def datatable():
+    return render_template("datatable.html")
 
 @app.route('/d3viz')
 def d3viz():
