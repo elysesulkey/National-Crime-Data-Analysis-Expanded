@@ -33,8 +33,13 @@ def resources():
     return render_template("resources.html")   
 
 @app.route('/visualizations')
-def visualizations():
-    return render_template("visualizations.html")
+@app.route('/visualizations/<year>')
+def visualizations(year="2019"):
+    if year == "2019":
+        unselected_year="2018"
+    else:
+        unselected_year="2019"
+    return render_template("visualizations.html",selected_year=year,unselected_year=unselected_year)
 
 
 @app.route('/d3viz')
