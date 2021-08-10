@@ -153,7 +153,7 @@ function heatmapyearchange(yearSelected) {
     // d3.select("#mapid").html("")
     var yearData;
     console.log(yearSelected)
-    var heatmapyearlink = `/map/${yearSelected}`
+    var heatmapyearlink = `/visualizations/${yearSelected}`
     window.location.href = heatmapyearlink
     window.location.replace(heatmapyearlink)
 }
