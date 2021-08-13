@@ -13,7 +13,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('DATABASE_URI')
 db = SQLAlchemy(app)
 
 
-
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String)
@@ -22,7 +21,6 @@ class Note(db.Model):
 @app.route('/aboutus')
 def aboutus():
     return render_template("aboutus.html")
-
 
 @app.route('/')
 def index():
@@ -33,27 +31,12 @@ def resources():
     return render_template("resources.html")   
 
 @app.route('/visualizations')
-@app.route('/visualizations/<year>')
-def visualizations(year="2019"):
-    if year == "2019":
-        unselected_year="2018"
-    else:
-        unselected_year="2019"
-    return render_template("visualizations.html",selected_year=year,unselected_year=unselected_year)
-
-
-@app.route('/d3viz')
-def d3viz():
-    return render_template("d3viz.html")
+def visualizations():
+    return render_template("visualizations.html")
 
 @app.route('/map')
-@app.route('/map/<year>')
-def map(year="2019"):
-    if year == "2019":
-        unselected_year="2018"
-    else:
-        unselected_year="2019"
-    return render_template("ImTheMap.html",selected_year=year,unselected_year=unselected_year)
+def map():
+    return render_template("map.html")
 
 @app.route('/api/notes/postgres')
 def note_postgres():
