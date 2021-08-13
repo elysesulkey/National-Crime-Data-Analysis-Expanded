@@ -3,101 +3,20 @@
 {% set active_page = "aboutus" %}
 
 {% block content %}
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
 
-  html {
-    box-sizing: border-box;
-  }
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
-  .row {
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
-  .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 6px;
-  }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    min-height: 200px;
-  }
-
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-  }
-
-  .container {
-    padding: 0 16px; 
-  }
-
-  .container::after,
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .title {
-    color: grey;
-  }
-
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  .button:hover {
-    background-color: #555;
-  }
-
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-</style>
-<!-- Start of landing page content -->
-<!-- Start of container -->
-<div class="about-section">
+<div class="header-section">
   <h1>About the USS Struggle</h1>
   <p>Navigating Stormy Data into Smoother waters.</p>
 </div>
 
-<div class="row">
+<div class="about-row">
   <h1 style="text-align:center">The Crew</h1>
-  <div class="column">
-    <div class="card">
+  <div class="about-column">
+    <div class="about-card">
       <img
         src="https://scontent.flap2-1.fna.fbcdn.net/v/t1.18169-9/20882386_10210701383279348_2930330581219102587_n.jpg?_nc_cat=102&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=Zctn8HsbWKEAX9A-6-S&_nc_ht=scontent.flap2-1.fna&oh=cc88e85918c83004cc5ebdb909819a7b&oe=6133DA2F"
         alt="Russ Collins" style="width:100%;Height:100%;">
-      <div class="container">
+      <div class="about-container">
         <h2> Russ Collins</h2>
         <p>Russ Collins received his Bachelor’s degree in Political Science from Clemson University. Russ is currently
           focused on training, deployment, and management of customer relationship management systems for the Collins
@@ -109,12 +28,12 @@
       </div>
     </div>
   </div>
-  <div class="column">
-    <div class="card">
+  <div class="about-column">
+    <div class="about-card">
       <img
         src="https://media-exp3.licdn.com/dms/image/C5603AQELFk8eT0A4Iw/profile-displayphoto-shrink_800_800/0/1612028153904?e=1631145600&v=beta&t=YVtTQOUzaSigOYTo1KED3jc4XD4hBvXiKjfPApLmscE"
         alt="Jasmin Raven" style="width:100%;Height:100%;">
-      <div class="container">
+      <div class="about-container">
         <h2> Jasmin Raven</h2>
         <p>Jasmin Raven is a former member of the United States Air Force. She is currently finishing her certificate
           in Data Analytics with UNC-Chapel Hill. Data analytics aside; Jasmine is an avid painter, enjoys experimenting with new
@@ -124,12 +43,12 @@
       </div>
     </div>
   </div>
-  <div class="column">
-    <div class="card">
+  <div class="about-column">
+    <div class="about-card">
       <img
         src="https://scontent.flap2-1.fna.fbcdn.net/v/t1.6435-9/154770123_3843389829042879_1437729186564391067_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=NvY4tmUIRAcAX-7mjT5&_nc_ht=scontent.flap2-1.fna&oh=41ea0cbff8d1987ce28442a52a2cad22&oe=6132D6BC"
         alt="Elyse Sulkey" style="width:100%;Height:100%;">
-      <div class="container">
+      <div class="about-container">
         <h2> Elyse Sulkey</h2>
         <p>Elyse Sulkey is a former museum professional excited to be entering the world of tech.
           She holds a BA in History from UNC-Chapel Hill and a MSc in Museum Studies from the University of Glasgow.
@@ -140,12 +59,12 @@
       </div>
     </div>
   </div>
-  <div class="column">
-    <div class="card">
+  <div class="about-column">
+    <div class="about-card">
       <img
         src="https://media-exp3.licdn.com/dms/image/C4D03AQEfZ7NeIRotwA/profile-displayphoto-shrink_800_800/0/1608402037640?e=1631145600&v=beta&t=Cgc8xKVx2hVAAdsfu0Pq5Qbs9zEHtSsaZy0tuDoignY"
         alt="David Vanie" style="width:100%;Height:100%;">
-      <div class="container">
+      <div class="about-container">
         <h2> David Vanie</h2>
         <p>David Vanie is a father of 5 children, been married for 16 years and recently retired semi truck owner.
           He will be graduating w/ his BA in behavioral social science from North Carolina Central University in the

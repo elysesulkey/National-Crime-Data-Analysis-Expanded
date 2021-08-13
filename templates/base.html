@@ -14,29 +14,27 @@
 
 
 <body style="background-color:#fff;">
-
+    <!-- Begin Navbar -->
     <div class="navbar-header">
-        <a class="nav-link-og" style="background-color: rgb(100, 149, 237); width:20%;" href="/">Home</a>
-        <a class="nav-link-og" style="background-color: rgb(100, 149, 237); width:20%;" href="/visualizations">Visualizations</a>
-        <a class="nav-link-og" style="background-color: rgb(100, 149, 237); width:20%;" href="/map">Map</a>
-        <a class="nav-link-og" style="background-color: rgb(100, 149, 237); width:20%;" href="/aboutus">About Us</a>
-        <a class="nav-link-og" style="background-color: rgb(100, 149, 237); width:20%;" href="/resources">Resources</a>
+        <a class="nav-link-og" style="background-color: rgb(100, 149, 237)" href="/">Home</a>
+        <a class="nav-link-og" style="background-color: rgb(100, 149, 237)" href="/visualizations">Visualizations</a>
+        <a class="nav-link-og" style="background-color: rgb(100, 149, 237)" href="/map">Map</a>
+        <a class="nav-link-og" style="background-color: rgb(100, 149, 237)" href="/aboutus">About Us</a>
+        <a class="nav-link-og" style="background-color: rgb(100, 149, 237)" href="/resources">Resources</a>
     </div>
+    <!-- End Navbar -->
 
-    <!-- Naviation Bar at top of page -->
     <div id="unique-block-content" style="padding:10px;">
         {% block content %}
         {% endblock %}
     </div>
 
     <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-            &copy; Copyright USS Struggle 2021
-        </p>
-    </footer>
+    <div class="footer">
+        <p> &copy; Copyright USS Struggle 2021</p>
+    </div>
     <!-- End of footer -->
+
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

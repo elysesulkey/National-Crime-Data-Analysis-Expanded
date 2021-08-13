@@ -4,8 +4,9 @@ box-sizing: border-box
 }
 
 body {
-font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
 
 .navbar-header {
 width: 100%;
@@ -41,3 +42,69 @@ background-color: #04AA6D;
     text-align: left;
 }
 }
+
+.header-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+.footer {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+
+.about-row {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+.about-column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 6px;
+  }
+
+.about-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    min-height: 200px;
+  }
+
+.about-container {
+    padding: 0 16px; 
+  }
+
+.about-container::after,
+.about-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.about-title {
+    color: grey;
+  }
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+.button:hover {
+    background-color: #555;
+  }
+  
