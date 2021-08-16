@@ -7,6 +7,6 @@ Since the raw data only provided reports for cities with populations over 100k, 
 
 While drawing inspiration from our previous project, our group chose to expand our dataset from 2018-2019 to 2011-2018 and to rework our previous visualizations. Instead of hard coding our visualizations using D3 and plotly, we chose to move to a tableau dashboard as we felt this would create a cleaner end product. 
 
-Going forward, our group would like to re-attempt the two part machine learning predictions to give a better analysis of the most violent state/s in the coming years. Ideally, this would also include predictive data for the entire decade, rather than just one year. 
+Going forward, our group would like to re-attempt the two part machine learning predictions to give a better analysis of the most violent state/s in the coming years. Ideally, this would also include predictive data for the entire decade, rather than just one year. Additionally, we would like to find more datasets to support our hypothesis and help limit the impact of other variables, such as state economic developments, on our data. 
 
 
