@@ -38,6 +38,10 @@ def visualizations():
 def map():
     return render_template("map.html")
 
+@app.route('/predictivedata')
+def predictivedata():
+    return render_template("predictivedata.html")
+
 @app.route('/api/notes/postgres')
 def note_postgres():
     notes = db.session.query(Note)
