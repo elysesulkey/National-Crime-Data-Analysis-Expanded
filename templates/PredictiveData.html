@@ -3,31 +3,70 @@
 {% set active_page = "predictivedata" %}
 
 {% block content %}
-<div class="header-section">
-    <h1>Machine Learning</h1>
-    <p>Population Predictions for 2028</p>
-  </div>
-<div class='tableauPlaceholder' id='viz1629070799317' style='position: relative'><noscript><a href='#'><img
-                alt='Sheet 2 '
-                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;predictivedatafor2028&#47;Sheet2&#47;1_rss.png'
-                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='predictivedatafor2028&#47;Sheet2' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;predictivedatafor2028&#47;Sheet2&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-    </object></div>
-<script
-    type='text/javascript'>                    var divElement = document.getElementById('viz1629070799317'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+
+<div class="header-section">
+  <h1>Population Forecast & Data Analysis</h1>
+</div>
+    <div class="row">
+    <div class="col-md-6">
+        <article class="description-content">
+            <hr class="description-hr" />
+            <div class='tableauPlaceholder' id='viz1629070799317' style='position: relative'><noscript><a href='#'><img
+                            alt='Sheet 2 '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;predictivedatafor2028&#47;Sheet2&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='predictivedatafor2028&#47;Sheet2' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;predictivedatafor2028&#47;Sheet2&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1629070799317'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+        </article>
+    </div>
+    <div class="col-md-6">
+        <article class="description-content">
+            <hr class="description-hr" />
+            <p>
+            <h3>Context</h3>
+            Originally, we hypothesized that states containing cities with higher crime rates would see shrinking populations over the next decade while states with lower crime rates would see rising populations. 
+Looking at our population predictions for 2028, we noticed INSERT EXAMPLES. However, we were unable to reach a conclusive analysis to support a direct link between crime and population. 
+Additionally, we acknowledge that our dataset does not account for other factors that would affect a state’s population such as economic opportunities.
+
+            <h3>Content</h3>
+            The total content is provided in the provided searchable database. The content is public and available
+            to
+            download.
+
+            <h3>Data Source</h3>
+            All the credit for this data goes to the Federal Bureau of Investigation. For more information regarding
+            the
+            data refer <a href="https://ucr.fbi.gov/crime-in-the-u.s">here.</a></p>
+
+            <h3>Acknowledgement</h3>
+            <p>We thank our tutor <a href="https://ryan.zernach.com/">Ryan Zernach</a> for his immense knowledge and
+                insight.</p>
+
+            <p>We are also very grateful for all the help and guidence provided by Michael, Sam and Melodie
+                throughout the
+                process of this project. </p>
+        </article>
+    </div>
+</div>
 {% endblock %}
