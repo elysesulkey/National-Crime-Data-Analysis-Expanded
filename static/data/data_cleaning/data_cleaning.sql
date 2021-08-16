@@ -1,4 +1,3 @@
-
 CREATE TABLE "CrimeRecord" (
     "State" varchar NOT NULL,
     "City" varchar NOT NULL,
@@ -24,17 +23,17 @@ DROP COLUMN "City";
 SELECT * FROM "CrimeRecord";
 
 SELECT "State", "Year", 
-	ROUND(AVG("Population")) AS "Population", 
-	ROUND(AVG("ViolentCrime")) AS "Violent Crime",
-	ROUND(AVG("Murder")) AS "Murder",
-	ROUND(AVG("Rape")) AS "Rape",
-	ROUND(AVG("Robbery")) AS "Robbery",
-	ROUND(AVG("AggravatedAssault")) AS "Aggravated Assault",
-	ROUND(AVG("PropertyCrime")) AS "Property Crime",
-	ROUND(AVG("Burglary")) AS "Burglary",
-	ROUND(AVG("LarcenyTheft")) AS "Larceny Theft",
-	ROUND(AVG("MotorVehicleTheft")) AS "Motor Vehicle Theft",
-	ROUND(AVG("Arson")) AS "Arson"
+	ROUND(SUM("Population")) AS "Population", 
+	ROUND(SUM("ViolentCrime")) AS "Violent Crime",
+	ROUND(SUM("Murder")) AS "Murder",
+	ROUND(SUM("Rape")) AS "Rape",
+	ROUND(SUM("Robbery")) AS "Robbery",
+	ROUND(SUM("AggravatedAssault")) AS "Aggravated Assault",
+	ROUND(SUM("PropertyCrime")) AS "Property Crime",
+	ROUND(SUM("Burglary")) AS "Burglary",
+	ROUND(SUM("LarcenyTheft")) AS "Larceny Theft",
+	ROUND(SUM("MotorVehicleTheft")) AS "Motor Vehicle Theft",
+	ROUND(SUM("Arson")) AS "Arson"
 FROM "CrimeRecord"
 GROUP BY "State", "Year"
 ORDER BY "Year", "State" ASC;
