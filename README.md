@@ -9,4 +9,4 @@ While drawing inspiration from our previous project, our group chose to expand o
 
 Going forward, our group would like to re-attempt the two part machine learning predictions to give a better analysis of the most violent state/s in the coming years. Ideally, this would also include predictive data for the entire decade, rather than just one year. Additionally, we would like to find more datasets to support our hypothesis and help limit the impact of other variables, such as state economic developments, on our data. 
 
-
+https://projectthree-groupsix.herokuapp.com/
