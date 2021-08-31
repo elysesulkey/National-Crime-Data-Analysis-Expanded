@@ -1,4 +1,4 @@
-# projecttwo-groupsix
+# National Crime Data Analysis (expanded)
 
 
 The original goal of this project was to analyse crime data reported by the FBI for the years 2011-2018 and use this analysis to predict violent crime numbers and the most violent state for the year 2028. 
